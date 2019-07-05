@@ -9,7 +9,6 @@ var methodOverride = require("method-override")
 var Restaurant = require("./models/restaurant")
 var Comment = require("./models/comment")
 var User = require("./models/user")
-var seedDB = require("./seeds")
 
 var commentRoutes = require("./routes/comments")
 var restaurantRoutes = require("./routes/restaurants")
@@ -22,7 +21,6 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"))
 app.use(methodOverride("_method"));
 app.use(flash());
-//seedDB();
 
 // PASSPORT CONFIG
 app.use(require("express-session")({
