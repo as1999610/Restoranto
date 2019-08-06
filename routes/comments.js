@@ -44,9 +44,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
             })
         }
     })
-    //create a comment
-    //connect new comment to the restaurant
-    //redirect campground show page
+
 });
 
 //Editing comments

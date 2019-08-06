@@ -33,7 +33,7 @@
                     <a class="btn btn-success" href="/restaurants/<%= restaurant._id%>/comments/new">Add a Comment</a>
                 </div>
                 <hr>
-                <% campground.comments.forEach(function(comment){ %>
+                <% restaurant.comments.forEach(function(comment){ %>
                     <div class="row">
                         <div class="col-md-12">
                             <strong><%= comment.author.username %></strong>
